@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare+ | Medicine Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">💊</div>
+        <div>
+          <h1>MediCare<span>+</span></h1>
+          <p>Smart Medicine Reminder</p>
+        </div>
+      </div>
+
+      <div class="health">💚 Stay Healthy</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <small>YOUR DAILY HEALTH COMPANION ✨</small>
+        <h2>Never miss your<br><span>medicine again.</span></h2>
+        <p>Add your medicines, set a reminder and stay on track every day.</p>
+      </div>
+
+      <div class="hero-icon">
+        🩺
+        <div>💊</div>
+      </div>
+    </section>
+
+    <!-- ADD MEDICINE -->
+    <section class="card">
+
+      <div class="section-title">
+        <div class="round-icon">➕</div>
+        <div>
+          <h2>Add Medicine</h2>
+          <p>Enter your medication details</p>
+        </div>
+      </div>
+
+      <label>Medicine Name</label>
+      <input id="medicineName" type="text"
+             placeholder="e.g. Paracetamol">
+
+      <div class="row">
+        <div>
+          <label>Dosage</label>
+          <input id="dosage" type="text"
+                 placeholder="e.g. 1 Tablet">
+        </div>
+
+        <div>
+          <label>Reminder Time</label>
+          <input id="time" type="text"
+          placeholder="e.g. 08:30 PM">
+        </div>
+      </div>
+
+      <button class="add-btn" onclick="addMedicine()">
+        💊 Add Medicine <b>→</b>
+      </button>
+
+    </section>
+
+    <!-- MEDICINES -->
+    <section class="medicine-section">
+
+      <div class="list-head">
+        <div>
+          <h2>My Medicines 💊</h2>
+          <p>Your scheduled medicines</p>
+        </div>
+
+        <div class="count">
+          <span id="count">0</span>
+          Medicines
+        </div>
+      </div>
+
+      <div id="medicineList"></div>
+
+      <div id="empty" class="empty">
+        🧴
+        <h3>No medicines added yet</h3>
+        <p>Add your first medicine above to create a reminder.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      💙 MediCare+ &nbsp; • &nbsp; Your health, your routine.
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
